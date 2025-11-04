@@ -1,0 +1,263 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: all 0.3s ease-in-out;
+   
+
+    
+   
+}
+html {
+    scroll-behavior: smooth;
+    
+}
+p {
+    margin-bottom: 1.5rem;
+}
+
+a, .btn {
+   
+    transition:all 300ms
+}
+nav, .nav-links {
+    display: flex;
+    list-style: none;
+    border: #000 solid 1px;
+    
+}
+
+   
+nav {
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    
+}
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+
+
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color:rgb(56, 53, 53);
+}
+
+.logo {
+    font-size: 2rem;
+    
+    color: #000;
+    
+}
+.logo:hover {
+    cursor: default;
+}
+#hamburger-nav {
+    display: none;
+}
+.menu-links {
+    display: none;
+    position: relative; 
+}
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+section 
+{
+    padding-top: 0px;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+#profile {
+    display: flex;
+    gap: 3rem;
+    height: 50vh;
+}
+.section-pic-container {
+    display: flex;
+   margin: auto 0;
+    width: 30%;
+    height: 400px;
+    width: 400px;
+}
+.section-text-l1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 500;
+    font-size: larger;
+}
+.section-btn a {
+    margin: auto;
+    padding: 10px;
+    background-color: #0e0e0f;
+    color: black;
+    font-size: bold;
+    border-radius: 40px;
+    display: inline-block;
+
+}
+.about {
+    text-align:end;
+    
+    
+}
+.statement {
+    text-align: end;
+}
+.p1 {
+    border: #000 solid 1px;
+    margin-left: 50px;
+    margin-top: 100px;
+    border-radius: 50px;
+    padding: 60px;
+    margin: 80px;
+
+}
+
+.nav2 {
+    border: 2px solid #374151;  /* Border around the entire list container */
+           /* Rounded corners for the container */
+    padding: 0rem;              /* Space between border and list items */
+    margin: 0rem auto;          /* Center the container and add vertical space */
+    max-width: 800px; 
+    width: 1000%;          /* Optional: limit the container width */
+}
+
+.nav2 ul {
+    display: flex;           /* Enable flexbox */
+    flex-wrap: wrap;         /* Allow items to wrap on smaller screens */
+    gap: 1.5rem;            /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;     /* Center items vertically */
+    list-style: none;       /* Remove bullet points */
+    padding: 0;             /* Remove default padding */
+    margin: 0;              /* Remove margin since container handles spacing */
+}
+
+.nav2 li {
+        /* Inner spacing */
+    background: #f3f4f6;     /* Light background */
+         /* Rounded corners */
+    font-weight: 500;        /* Medium weight text */
+    color: #374151;          /* Dark gray text */
+    transition: all 0.3s;  
+      /* Smooth hover effect */
+}
+
+.nav2 li:hover {
+    background: #e5e7eb;     /* Slightly darker on hover */
+    transform: translateY(-2px);  /* Slight lift effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav2 ul {
+        gap: 1rem;           /* Smaller gap on mobile */
+    }
+    
+    .nav2 li {
+        padding: 0.4rem 0.8rem;  /* Smaller padding on mobile */
+        font-size: 0.9rem;       /* Slightly smaller text */
+    }
+}
+.nav2 :hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 1s;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #eca62d;
+  font-size: 28px;
+}
+.icon-container {
+    display: flex;
+    gap: 15rem;
+    /* Center icons horizontally */       /* Center icons vertically */
+}
+
+.contacts1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.contacts1 ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+}
+
+.contacts1 i {
+    font-size: 2.5rem;  /* Increased icon size */
+    color: #f0f3f5;
+    transition: all 0.3s ease;
+}
+
+.contacts1 i:hover {
+    transform: translateY(-5px);
+    color: #f1e9e9;
+}
+
+.contacts1 a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.contacts1 .email-text {
+    font-size: 1rem;
+    color: #fffafa;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Hide the email text on small screens to save space, but keep the icon clickable */
+@media (max-width: 520px) {
+    .contacts1 .email-text {
+        display: none;
+    }
+    .contacts1 i {
+        font-size: 2rem;
+    }
+}
+main {
+    background-color: rgb(18, 18, 18);
+    color: #e5e7eb;
+    
+    
+}
+.about {
+    color: #f1aa1d;
+}
